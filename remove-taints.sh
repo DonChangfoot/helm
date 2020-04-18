@@ -1,46 +1,45 @@
-
 ## Set taints/labels for GC node Isolation
 
 # ml_api
-kubectl taint nodes ip-10-1-2-239.eu-west-2.compute.internal node-role.mojaloop.io:ml_api:NoSchedule-
-kubectl label nodes ip-10-1-2-239.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-3d3f node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-3d3f node-role.mojaloop.io-
 
 # ml_notify
-kubectl taint nodes ip-10-1-2-58.eu-west-2.compute.internal node-role.mojaloop.io:ml_notify:NoSchedule-
-kubectl label nodes ip-10-1-2-58.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-5tln node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-5tln node-role.mojaloop.io-
 
 # ml_cl_prepare
-kubectl taint nodes ip-10-1-2-251.eu-west-2.compute.internal node-role.mojaloop.io:ml_cl_prepare:NoSchedule-
-kubectl label nodes ip-10-1-2-251.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-cs5q node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-cs5q node-role.mojaloop.io-
 
 # ml_cl_position
-kubectl taint nodes ip-10-1-2-16.eu-west-2.compute.internal node-role.mojaloop.io:ml_cl_position:NoSchedule-
-kubectl label nodes ip-10-1-2-16.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-f5rw node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-f5rw node-role.mojaloop.io-
 
-# ml_cl_fulfil
-kubectl taint nodes ip-10-1-2-87.eu-west-2.compute.internal node-role.mojaloop.io:ml_cl_fulfil:NoSchedule-
-kubectl label nodes ip-10-1-2-87.eu-west-2.compute.internal node-role.mojaloop.io-
+# # ml_cl_fulfil
+kubectl taint nodes gke-performance-pool-1-c6d09e96-f7z2 node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-f7z2 node-role.mojaloop.io-
 
 # broker 1
-kubectl taint nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io:broker:NoSchedule-
-kubectl label nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-fmsp node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-fmsp node-role.mojaloop.io-
 
 # broker 2
-kubectl taint nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io:broker:NoSchedule-
-kubectl label nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-j6kq node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-j6kq node-role.mojaloop.io-
 
 # broker 3
-kubectl taint nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io:broker:NoSchedule-
-kubectl label nodes ip-10-1-2-22.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-ppk1 node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-ppk1 node-role.mojaloop.io-
 
 # data
-kubectl taint nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io:data:NoSchedule-
-kubectl label nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-qx1k node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-qx1k node-role.mojaloop.io-
 
-# load generator
-kubectl taint nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io:load:NoSchedule-
-kubectl label nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io-
+# load
+kubectl taint nodes gke-performance-pool-1-c6d09e96-sgvx node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-sgvx node-role.mojaloop.io-
 
 # monitor
-kubectl taint nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io:monitor:NoSchedule-
-kubectl label nodes ip-10-1-2-188.eu-west-2.compute.internal node-role.mojaloop.io-
+kubectl taint nodes gke-performance-pool-1-c6d09e96-v8fj node-role.mojaloop.io-
+kubectl label nodes gke-performance-pool-1-c6d09e96-v8fj node-role.mojaloop.io-
